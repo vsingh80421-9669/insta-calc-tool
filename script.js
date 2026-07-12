@@ -7,7 +7,7 @@ calcBtn.addEventListener('click' ,function() {
    const like = Number(likesInput.value);
 
    if (followers <= 0) {
-       alert("bhai, sahi followers daalo!");
+       alert("Aapka Engagement Rate hai: " + emgagement + "%");
        return;
    }    
 
