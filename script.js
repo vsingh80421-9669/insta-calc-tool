@@ -1,6 +1,7 @@
 const followersInput = document.getElementById('followers-input');
 const likesInput = document.getElementById('likes-input');
 const calcBtn = document.getElementById('calc-btn');
+const resText = document.getElementById('res-text');
 
 calcBtn.addEventListener('click' ,function() {
    const followers = Number(followersInput.value);
@@ -13,6 +14,6 @@ calcBtn.addEventListener('click' ,function() {
 
     const engagement = (like / followers) * 100;
         alert("Aapka Engagement Rate hai: " + engagement.toFixed(2) + "%");
-    // bhai sahi likes and followers daalo!
+    resText.innerText = engagement.toFixed(2) + "%";
 });
                          
