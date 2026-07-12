@@ -12,7 +12,7 @@ calcBtn.addEventListener('click' ,function() {
    }    
 
     const engagement = (like / followers) * 100;
-        alert("Aapka Engagement Rate hai: " + engagement + "%");
+        alert("Aapka Engagement Rate hai: " + engagement.toFixed(2) + "%");
     // bhai sahi likes and followers daalo!
 });
                          
