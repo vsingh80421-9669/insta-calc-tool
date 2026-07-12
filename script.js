@@ -3,5 +3,16 @@ const likesInput = document.getElementById('likes-input');
 const calcBtn = document.getElementById('calc-btn');
 
 calcBtn.addEventListener('click' ,function() {
-    // Asli calculations iske andar aayengi
+   const followers = Number(followersInput.value);
+   const like = Number(likesInput.value);
+
+   if (followers <= 0) {
+       alert("bhai, sahi followers daalo!");
+       return;
+   }    
+
+    const engagement = (like / followers) * 100;
+
+    // bhai sahi likes and followers daalo!
 });
+                         
