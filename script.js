@@ -23,5 +23,6 @@ calcBtn.addEventListener('click' ,function() {
       healthText.innerText = "Good"; 
    } else {
       healthText.innerText = "Excellent";
+   }
 });
                          
